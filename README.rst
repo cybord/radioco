@@ -25,3 +25,21 @@ Documentation
 
 Please head over to our `documentation <http://django-radio.readthedocs.org/>`_ for all
 the details on how to install, extend and use RadioCo.
+
+***********
+Quick Start
+***********
+
+You can use a `configured radioco project  <https://github.com/iago1460/radioco>`_::
+
+    sudo apt-get install git-core python-pip
+    git clone https://github.com/iago1460/radioco
+    cd radioco
+    virtualenv .
+    source bin/activate
+    pip install -r requirements.txt
+    python manage.py migrate
+    python manage.py runserver
+
+That should be it. Point a web browser to `127.0.0.1:8000 <http://127.0.0.1:8000>`_ : you
+should get the RadioCo Index screen.
