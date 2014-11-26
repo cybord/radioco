@@ -76,6 +76,17 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.locale.LocaleMiddleware',
 )
 
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'radio.global_vars.global_vars',
+    'django.contrib.auth.context_processors.auth',
+    'django.core.context_processors.debug',
+    'django.core.context_processors.i18n',
+    'django.core.context_processors.media',
+    'django.core.context_processors.static',
+    'django.core.context_processors.tz',
+    'django.contrib.messages.context_processors.messages'
+)
+
 ROOT_URLCONF = 'radioco.urls'
 
 WSGI_APPLICATION = 'radioco.wsgi.application'
@@ -102,7 +113,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
@@ -116,3 +127,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(PROJECT_PATH, 'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(PROJECT_PATH, 'media')
+
+
+# Variables
+USERNAME_RADIOCO_RECORDER = 'RadioCo_Recorder'

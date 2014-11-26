@@ -32,7 +32,7 @@ Quick Start
 
 You can use a `configured radioco project  <https://github.com/iago1460/radioco>`_::
 
-    sudo apt-get install git-core python-pip
+    sudo apt-get install git-core python-dev python-pip python-virtualenv
     git clone https://github.com/iago1460/radioco
     cd radioco
     virtualenv .
