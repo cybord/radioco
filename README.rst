@@ -6,6 +6,8 @@ RadioCo is a broadcasting radio recording scheduling system. RadioCo has been
 intended to provide a solution for a wide range of broadcast projects, from
 community to public and commercial stations.
 
+* Live demo: `demo.radioco.org <http://demo.radioco.org/>`_
+
 ********
 Features
 ********
@@ -35,11 +37,16 @@ You can use a `configured radioco project  <https://github.com/iago1460/radioco>
     sudo apt-get install git-core python-dev python-pip python-virtualenv
     git clone https://github.com/iago1460/radioco
     cd radioco
-    virtualenv .
-    source bin/activate
+    virtualenv venv
+    source venv/bin/activate
     pip install -r requirements.txt
     python manage.py migrate
     python manage.py runserver
 
-That should be it. Point a web browser to `127.0.0.1:8000 <http://127.0.0.1:8000>`_ : you
-should get the RadioCo Index screen.
+Optional: Load example data::
+	
+	python manage.py loaddata example_data.json
+
+That should be it. The default username and password is ``admin``. Point a web
+browser to `127.0.0.1:8000 <http://127.0.0.1:8000>`_ : you should get the
+RadioCo Index screen.

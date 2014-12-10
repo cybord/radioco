@@ -129,5 +129,15 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(PROJECT_PATH, 'media')
 
 
-# Variables
+# RadioCo Settings
+# http://django-radio.readthedocs.org/en/latest/reference/configuration.html
+
 USERNAME_RADIOCO_RECORDER = 'RadioCo_Recorder'
+
+'''
+gettext_noop = lambda s: s
+PROGRAMME_LANGUAGES = (
+    ('es', gettext_noop('Spanish')),
+    ('en', gettext_noop('English')),
+)
+'''
