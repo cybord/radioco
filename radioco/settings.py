@@ -61,6 +61,7 @@ INSTALLED_APPS = (
     'radio.apps.schedules',
     'radio.libs.global_settings',
     'radio.libs.home',
+    'ckeditor',
     'bootstrap3',
     'rest_framework',
     'rest_framework.authtoken'
@@ -131,8 +132,7 @@ MEDIA_ROOT = os.path.join(PROJECT_PATH, 'media')
 
 # RadioCo Settings
 # http://django-radio.readthedocs.org/en/latest/reference/configuration.html
-
-USERNAME_RADIOCO_RECORDER = 'RadioCo_Recorder'
+from radio.settings_base import *
 
 '''
 gettext_noop = lambda s: s
