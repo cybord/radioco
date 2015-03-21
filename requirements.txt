@@ -1,1 +1,1 @@
-django-radio==1.1.1
+django-radio==1.2
